@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"> 
+    <link rel="stylesheet" href="style.css">
+    <title>GameApp</title>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <input type="checkbox" id="check-p1">
+    <input type="checkbox" id="check-p2">
+    <input type="checkbox" id="check-p3">
+    <input type="checkbox" id="check-p4">
+    <input type="checkbox" id="check-p5">
+    <input type="checkbox" id="check-p6">
+    
+    <p class="book-title">Book Of Fun</p>
+    <div class="book">
+        <div class="cover">
+            <label for="check"></label>
+        </div>
+        <!-- page1 -->
+
+        <div class="page" id="p1">
+            <!-- front-face of the page -->
+            <div class="front">
+                <p>Dive into a world of fun with this collection of classic games.</p>
+                <p>Brace yourself for boundless fun, where every turn of the page unveils a new "adventure"! </p>
+                <label for="check-p1" class="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                        <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                    </svg>
+                </label>
+            </div>
+            <div class="back">
+                <!-- back-face of the page -->
+                <a href="/pages/tic/tic.html"> <img src="/src/TicTacToe.png" alt="" loading="lazy"></a>
+                <label for="check-p1" class="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                    </svg>
+                </label>
+            </div>
+        </div>
+
+        <!-- page2 -->
+
+        <div class="page" id="p2">
+            <!-- front-face of the page -->
+            <div class="front">
+                <p>"Ready for a quick game of Tic Tac Toe against a challenging CPU opponent? Click to start the fun now and test your strategic skills!"</p>
+                <label for="check-p2" class="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                        <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                    </svg>
+                </label>
+            </div>
+            <div class="back">
+                <!-- back-face of the page -->
+                <p>Minesweeper: Navigate a minefield, avoid hidden mines, and clear the board using logic and strategy. Quick, addictive, and challenging!</p>
+                <label for="check-p2" class="next">
+                    <svg xmlns="http://
+                    <www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16"> -->
+                        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                    </svg>
+                </label>
+            </div>
+        </div>
+
+        <!-- page3 -->
+
+        <div class="page" id="p3">
+            <!-- front-face of the page -->
+            <div class="front">
+                <a href="/pages/mine/mine.html"><img src="/src/minesweeper.png" alt="" loading="lazy"></a>
+                <label for="check-p3" class="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                        <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                    </svg>
+                </label>
+            </div>
+            <div class="back">
+                <!-- back-face of the page -->
+                <label for="check-p3" class="next">
+                    <svg xmlns="http://
+                    <www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16"> -->
+                        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                    </svg>
+                </label>
+            </div>
+        </div>
+
+        <!-- page4 -->
+
+        <div class="page" id="p4">
+            <!-- front-face of the page -->
+            <div class="front">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error facilis pariatur deleniti! Ut magnam magni sint voluptates voluptas iure.</p>
+                <label for="check-p4" class="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                        <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                    </svg>
+                </label>
+            </div>
+            <div class="back">
+                <!-- back-face of the page -->
+                <label for="check-p4" class="next">
+                    <svg xmlns="http://
+                    <www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16"> -->
+                        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                    </svg>
+                </label>
+            </div>
+        </div>
+
+        <!-- page5 -->
+
+        <div class="page" id="p5">
+            <!-- front-face of the page -->
+            <div class="front">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error facilis pariatur deleniti! Ut magnam magni sint voluptates voluptas iure.</p>
+                <label for="check-p5" class="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                        <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                    </svg>
+                </label>
+            </div>
+            <div class="back">
+                <!-- back-face of the page -->
+                <label for="check-p5" class="next">
+                    <svg xmlns="http://
+                    <ack-face of the pagewww.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16"> -->
+                        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                    </svg>
+                </label>
+            </div>
+        </div>
+
+        <!-- page6 -->
+
+        <div class="page" id="p6">
+            <!-- front-face of the page -->
+            <div class="front">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error facilis pariatur deleniti! Ut magnam magni sint voluptates voluptas iure.</p>
+                <label for="check-p6" class="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                        <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                    </svg>
+                </label>
+            </div>
+            <div class="back">
+                <!-- back-face of the page -->
+                <label for="check-p6" class="next">
+                    <svg xmlns="http://
+                    <www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16"> -->
+                        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                    </svg>
+                </label>
+            </div>
+        </div>
+
+        <div class="back-cover"></div>
+    </div>
+</body>
+</html>

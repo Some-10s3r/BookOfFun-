@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Marck Script', cursive, "sans serif";
+    background: #202e3b;
+    color: #5a5959;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-title{
+    position: absolute;
+    top: 4rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fb2171;
+    text-shadow: 0 0 20px #fb2171;
+}
+
+.book {
+    width: 350px;
+    height: 450px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+input {
+    display: none;
+}
+
+.cover,
+.back-cover {
+    background-image: url(/src/cover.jpg);
+    width: 100%;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 0 5px rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.cover {
+    z-index: 999;
+    position: absolute;
+    transform-origin: center left;
+    transition: transform 0.6s ease-out;
+    
+}
+
+.cover label {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+}
+
+#check:checked~.book .cover label {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-out, pointer-events 0s linear 0.3s;
+}
+
+.back-cover {
+    position: relative;
+    z-index: -1;
+}
+
+.page {
+    z-index: 1;
+    background: #ffffe8;
+    background-image: url(/src/paperBG.jpg);
+    width: 330px;
+    height: 430px;
+    border-radius: 0 15px 15px 0;
+    position: absolute;
+    margin-top: 10px;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: 0.5s ease-out;
+}
+
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    padding: 1.4em 1em;
+    transform: rotateY(0deg);
+}
+
+.back{transform: rotateY(180deg);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: .5s ease-in;}
+
+.next,
+.prev {
+    position: absolute;
+    bottom: 1em;
+    cursor: pointer;
+}
+
+.prev {
+    right: 1em;
+}
+
+.next {
+    left: 1em;
+}
+
+
+
+#p1{z-index: 6;}
+#p2{z-index: 5;}
+#p3{z-index: 4;}
+#p4{z-index: 3;}
+#p5{z-index: 2;}
+#p6{z-index: 1;}
+
+#check:checked~.book {
+    transform: translateX(200px);
+    transition: 0.4s ease-out;
+}
+
+#check:checked~.book .cover {
+    transform: rotateY(-180deg);
+    transition: transform 1.5s;
+    z-index: 1;
+}
+
+#check-p1:checked~.book #p1 {
+    transform: rotateY(-180deg);
+    z-index: 2;
+}
+
+#check-p2:checked~.book #p2 {
+    transform: rotateY(-180deg);
+    z-index: 3;
+}
+
+#check-p3:checked~.book #p3 {
+    transform: rotateY(-180deg);
+    z-index: 4;
+}
+
+#check-p4:checked~.book #p4 {
+    transform: rotateY(-180deg);
+    z-index: 5;
+}
+
+#check-p5:checked~.book #p5 {
+    transform: rotateY(-180deg);
+    z-index: 6;
+}
+
+#check-p6:checked~.book #p6 {
+    transform: rotateY(-180deg);
+    z-index: 7;
+}
+/* style of pages */
+.front p, .back p{ line-height: 1.35rem;font-size: 22px;}
+/* styles of back */
+.back img,.front img{width: 100%;height: 100%;}
+/* style of page1 */
+/* front : */
+#p1 .front{background-image: url(/src/p1fBG.png);
+background-size:initial}
+#p1 .front p:nth-child(1){padding: 1.15rem 0 0 6.5rem;}
+#p1 .front p:nth-child(2){padding: 1.45rem 2.5rem 0 0 ;}
+/* styles of page2 */
+/* front :  */
+#p2 .front {background-image: url(/src/p2fBG.png);}
+#p2 .front p{padding: 6.55rem 0 0 0 ;}
+/* back :  */
+#p2 .back {background-image: url(/src/p2bBG.png);}
+#p2 .back p{padding: 1.17rem 1.5em 0 0;}

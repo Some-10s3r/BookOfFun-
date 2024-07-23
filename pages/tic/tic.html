@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tic.css">
+    <script src="tic.js" async></script>
+    <title>Tic Tac Toe</title>
+    <style>
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0;
+            } 50% {
+                opacity: 1;
+            }
+        }
+        span {
+            display: inline-block;
+            animation: fadeInOut 2s ease-in;
+            animation-delay: calc(0.1s * var(--index));
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1" id="tic">Tic Tac Toe</h1>
+        <h2 id="versus"></h2>
+        <h1 class="h1"id="msg"></h1>
+        <div class="btn-container">
+            <button id="2player" onclick="startPlGame()">vs Humain</button>
+            <a href="/index.html">
+                <button id="home">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                      </svg>
+                </button>
+            </a>
+            <button id="restart" onclick="startGame()">vs AI</button>
+        </div>
+
+        <div id="gameboard">
+            <div class="box" id="0"></div>
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
+        </div>
+    </div>
+
+
+<script>
+    const textElement = document.getElementById('tic');
+    const text = textElement.textContent;
+    textElement.innerHTML = '';
+
+    for (let i = 0; i < text.length; i++) {
+        const span = document.createElement('span');
+        span.textContent = text[i];
+        span.style.setProperty('--index', i + 1);
+        textElement.appendChild(span);
+
+        if (i < text.length - 1 && (text[i] == 'c')||(text[i] == 'e')) {
+            const space = document.createTextNode(' ');
+            textElement.appendChild(space);
+        }
+    }
+</script>
+</body>
+</html>
